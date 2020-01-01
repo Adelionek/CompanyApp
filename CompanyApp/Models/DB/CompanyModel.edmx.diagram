@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="b347f5588c184ae79adc0749b16f4b5a" Name="Diagram1">
+        <EntityTypeShape EntityType="CompanyDBModel.Company" Width="1.5" PointX="3" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CompanyDBModel.ContactPerson" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CompanyDBModel.Note" Width="1.5" PointX="8.25" PointY="3.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="CompanyDBModel.Role" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CompanyDBModel.Trade" Width="1.5" PointX="2.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="CompanyDBModel.User" Width="1.5" PointX="0.75" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="CompanyDBModel.FK__Companies__userI__398D8EEE" ManuallyRouted="false" />
+        <AssociationConnector Association="CompanyDBModel.FK__ContactPe__compa__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="CompanyDBModel.FK__Note__companyID__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="CompanyDBModel.FK__ContactPe__userI__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="CompanyDBModel.FK__Note__userID__3D5E1FD2" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

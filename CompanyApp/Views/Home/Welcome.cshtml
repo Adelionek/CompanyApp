@@ -1,0 +1,8 @@
+﻿@Html.ActionLink("Signout", "SignOut", "User");
+@{
+    ViewBag.Title = "Welcome";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hi <b>@Context.User.Identity.Name</b>! Welcome to Company Application!</h2>
+
