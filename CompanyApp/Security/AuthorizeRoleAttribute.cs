@@ -11,6 +11,7 @@ namespace CompanyApp.Security
     public class AuthorizeRoleAttribute : AuthorizeAttribute
     {
         private readonly string[] userAssignedRoles;
+        //params is to receive variable number of parameters!!!
         public AuthorizeRoleAttribute(params string[] roles)
         {
             this.userAssignedRoles = roles;
@@ -28,9 +29,12 @@ namespace CompanyApp.Security
                     if (authorize)
                         return authorize;
                 }
-                return authorize;
             }
-            return base.AuthorizeCore(httpContext);
+            return authorize;
+        }
+        protected override void HandleUnauthorizedRequest(AuthorizationContext filterContext)
+        {
+            filterContext.Result = new RedirectResult("~/Home/UnAuthorized");
         }
     }
 }

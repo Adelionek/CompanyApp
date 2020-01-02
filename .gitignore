@@ -10,6 +10,7 @@
 *.userosscache
 *.sln.docstates
 CompanyApp/Models/DB/*
+CompanyApp/Models/DB/
 CompanyApp/Web.config
 
 # User-specific files (MonoDevelop/Xamarin Studio)
@@ -167,6 +168,8 @@ DocProject/Help/*.hhk
 DocProject/Help/*.hhp
 DocProject/Help/Html2
 DocProject/Help/html
+CompanyApp/Models/DB/*
+CompanyApp/Models/DB/
 
 # Click-Once directory
 publish/

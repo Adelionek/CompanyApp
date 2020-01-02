@@ -31,9 +31,5 @@ namespace CompanyApp.Models.DB
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Trade> Trades { get; set; }
         public virtual DbSet<User> Users { get; set; }
-
-        public System.Data.Entity.DbSet<CompanyApp.Models.ViewModel.UserSingupView> UserSingupViews { get; set; }
-
-        public System.Data.Entity.DbSet<CompanyApp.Models.ViewModel.UserLoginView> UserLoginViews { get; set; }
     }
 }

@@ -47,7 +47,7 @@ namespace CompanyApp.Models.EntityManager
                 o.username.ToLower().Equals(loginName))?.FirstOrDefault(); //what is "?" for ?
 
                 if (usr != null)
-                {//dlaczego wybieramy z r ? 2 tabele z ktorych wybieramy ?
+                {
                     var roles = from q in db.Users
                                 join r in db.Roles on q.role_id equals r.roleID
                                 where q.userID.Equals(usr.userID) && r.roleName.Equals(roleName)

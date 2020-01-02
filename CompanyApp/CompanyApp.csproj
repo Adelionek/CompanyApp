@@ -218,8 +218,8 @@
     <Content Include="Global.asax" />
     <Content Include="Models\DB\CompanyModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CompanyModel.Context.cs</LastGenOutput>
       <DependentUpon>CompanyModel.edmx</DependentUpon>
+      <LastGenOutput>CompanyModel.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\DB\CompanyModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -278,6 +278,8 @@
     <Content Include="Views\User\SignUp.cshtml" />
     <Content Include="Views\User\ManageUser.cshtml" />
     <Content Include="Views\User\LogIn.cshtml" />
+    <Content Include="Views\Home\AdminOnly.cshtml" />
+    <Content Include="Views\Home\UnAuthorized.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
